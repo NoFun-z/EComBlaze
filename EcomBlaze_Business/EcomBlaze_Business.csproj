@@ -6,4 +6,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EcomBlaze_Common\EcomBlaze_Common.csproj" />
+    <ProjectReference Include="..\EcomBlaze_DataAccess\EcomBlaze_DataAccess.csproj" />
+    <ProjectReference Include="..\EcomBlaze_Models\EcomBlaze_Models.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -5,15 +5,17 @@ VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EComBlazeWeb_Server", "EComBlazeWeb_Server\EComBlazeWeb_Server.csproj", "{C92C32CA-AABE-4017-A9A5-FD820E47D260}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcomBlazeWeb_Client", "EcomBlazeWeb_Client\EcomBlazeWeb_Client.csproj", "{3E6F7E5E-971B-4D13-A79F-D53C9856AB68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcomBlazeWeb_Client", "EcomBlazeWeb_Client\EcomBlazeWeb_Client.csproj", "{3E6F7E5E-971B-4D13-A79F-D53C9856AB68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcomBlaze_Models", "EcomBlaze_Models\EcomBlaze_Models.csproj", "{5060C0D5-BFEC-4DCC-BA51-D25EA8C9628F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcomBlaze_Models", "EcomBlaze_Models\EcomBlaze_Models.csproj", "{5060C0D5-BFEC-4DCC-BA51-D25EA8C9628F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcomBlaze_Business", "EcomBlaze_Business\EcomBlaze_Business.csproj", "{36899C54-01F7-4131-97C2-39B65EC331B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcomBlaze_Business", "EcomBlaze_Business\EcomBlaze_Business.csproj", "{36899C54-01F7-4131-97C2-39B65EC331B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcomBlaze_Common", "EcomBlaze_Common\EcomBlaze_Common.csproj", "{477AA4BD-5A2F-4DC5-96CB-0D9D927686FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcomBlaze_Common", "EcomBlaze_Common\EcomBlaze_Common.csproj", "{477AA4BD-5A2F-4DC5-96CB-0D9D927686FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcomBlaze_DataAccess", "EcomBlaze_DataAccess\EcomBlaze_DataAccess.csproj", "{69E1CCAA-947D-48D6-A490-D5236FE10A75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcomBlaze_DataAccess", "EcomBlaze_DataAccess\EcomBlaze_DataAccess.csproj", "{69E1CCAA-947D-48D6-A490-D5236FE10A75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcomBlaze_API", "EcomBlaze_API\EcomBlaze_API.csproj", "{7C01B854-B671-4A92-BB19-B2FFE09BDBD2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{69E1CCAA-947D-48D6-A490-D5236FE10A75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69E1CCAA-947D-48D6-A490-D5236FE10A75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69E1CCAA-947D-48D6-A490-D5236FE10A75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C01B854-B671-4A92-BB19-B2FFE09BDBD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C01B854-B671-4A92-BB19-B2FFE09BDBD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C01B854-B671-4A92-BB19-B2FFE09BDBD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C01B854-B671-4A92-BB19-B2FFE09BDBD2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

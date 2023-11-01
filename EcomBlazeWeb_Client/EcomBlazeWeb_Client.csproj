@@ -7,8 +7,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Blazored.LocalStorage" Version="4.4.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.5" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.5" PrivateAssets="all" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EcomBlaze_Common\EcomBlaze_Common.csproj" />
+    <ProjectReference Include="..\EcomBlaze_DataAccess\EcomBlaze_DataAccess.csproj" />
+    <ProjectReference Include="..\EcomBlaze_Models\EcomBlaze_Models.csproj" />
   </ItemGroup>
 
 </Project>
