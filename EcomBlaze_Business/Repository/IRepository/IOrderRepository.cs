@@ -16,9 +16,9 @@ namespace EcomBlaze_Business.Repository.IRepository
 
         public Task<OrderHeaderDTO> UpdateHeader(OrderHeaderDTO objDTO);
 
-        //public Task<OrderHeaderDTO> MarkPaymentSuccessful(int id);
+        public Task<OrderHeaderDTO> MarkPaymentSuccessful(int id);
         public Task<bool> UpdateOrderStatus(int orderId, string status);
 
-        //public Task<OrderHeaderDTO> CancelOrder(int id);
+        public Task<OrderHeaderDTO> CancelOrder(int id);
     }
 }

@@ -1,8 +1,11 @@
 ﻿@page "/category"
+@using EcomBlaze_Common;
 @inject ICategoryRepository _categoryRepository
 @inject IProductRepository _productRepository
 @inject IFileUpload _fileUpload
 @inject IJSRuntime _jsRuntime
+@inject NavigationManager _navigationManager
+@attribute [Authorize(Roles = SD.Role_Admin)]
 
 <_DeleteConfirmation IsParentComponentProcessing="isLoading" ConfirmationChanged="ConfirmDelete_Click"></_DeleteConfirmation>
 <div class="row mt-4">
@@ -58,6 +61,26 @@
     private IEnumerable<CategoryDTO> Categories { get; set; } = new List<CategoryDTO>();
     private bool isLoading { get; set; }
     private int DeleteCategoryId { get; set; } = 0;
+
+    [CascadingParameter]
+    public Task<AuthenticationState> AuthenticationState { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthenticationState;
+        if (!authState.User.Identity.IsAuthenticated)
+        {
+            var uri = new Uri(_navigationManager.Uri);
+            _navigationManager.NavigateTo($"/identity/account/login?returnUrl={uri.LocalPath}", forceLoad: true);
+        }
+        else
+        {
+            if (!authState.User.IsInRole(EcomBlaze_Common.SD.Role_Admin))
+            {
+                _navigationManager.NavigateTo("/ErrorPage");
+            }
+        }
+    }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {

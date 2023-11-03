@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcomBlaze_Common", "EcomBla
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcomBlaze_DataAccess", "EcomBlaze_DataAccess\EcomBlaze_DataAccess.csproj", "{69E1CCAA-947D-48D6-A490-D5236FE10A75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcomBlaze_API", "EcomBlaze_API\EcomBlaze_API.csproj", "{7C01B854-B671-4A92-BB19-B2FFE09BDBD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcomBlaze_API", "EcomBlaze_API\EcomBlaze_API.csproj", "{7C01B854-B671-4A92-BB19-B2FFE09BDBD2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
