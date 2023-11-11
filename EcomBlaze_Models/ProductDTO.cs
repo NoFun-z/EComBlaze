@@ -11,9 +11,9 @@ namespace EcomBlaze_Models
     public class ProductDTO
     {
         public int Id { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Product's name cannot be empty")]
         public string Name { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Product must have clear description")]
         public string Description { get; set; }
         public bool ShopFavorites { get; set; }
         public bool CustomerFavorites { get; set; }

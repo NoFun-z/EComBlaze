@@ -11,9 +11,9 @@ namespace EcomBlaze_Models
     public class ProductPriceDTO
     {
         public int Id { get; set; }
-        [Required]
+        [Required (ErrorMessage = "Please select a product")]
         public int ProductId { get; set; }
-        [Required]
+        [Required (ErrorMessage = "Product must have a size")]
         public string Size { get; set; }
         public double Price { get; set; }
     }

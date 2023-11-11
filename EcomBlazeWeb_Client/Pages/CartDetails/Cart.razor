@@ -11,7 +11,7 @@
 }
 else
 {
-	@if (!ShoppingCart.Any())
+	@if (ShoppingCart == null || !ShoppingCart.Any())
 	{
 		<div>
 			Your Shopping Cart is empty!
@@ -119,11 +119,14 @@ else
 	{
 		OrderTotal = 0;
 		ShoppingCart = await _localStorage.GetItemAsync<List<ShoppingCart>>(SD.ShoppingCart);
-		foreach (var cart in ShoppingCart)
+		if (ShoppingCart != null)
 		{
-			cart.Product = Products.FirstOrDefault(u => u.Id == cart.ProductId);
-			cart.ProductPrice = cart.Product.ProductPrices.FirstOrDefault(u => u.Id == cart.ProductPriceId);
-			OrderTotal += (cart.ProductPrice.Price * cart.Count);
+			foreach (var cart in ShoppingCart)
+			{
+				cart.Product = Products.FirstOrDefault(u => u.Id == cart.ProductId);
+				cart.ProductPrice = cart.Product.ProductPrices.FirstOrDefault(u => u.Id == cart.ProductPriceId);
+				OrderTotal += (cart.ProductPrice.Price * cart.Count);
+			}
 		}
 	}
 
