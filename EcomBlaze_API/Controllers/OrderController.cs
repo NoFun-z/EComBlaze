@@ -67,8 +67,8 @@ namespace EcomBlaze_API.Controllers
             if (sessionDetails.PaymentStatus == "paid")
             {
                 var result = await _orderRepository.MarkPaymentSuccessful(orderHeaderDTO.Id);
-                await _emailSender.SendEmailAsync(orderHeaderDTO.Email, "EComBlaze Order Confirmation",
-                    "New Order has been created :" + orderHeaderDTO.Id);
+                //await _emailSender.SendEmailAsync(orderHeaderDTO.Email, "EComBlaze Order Confirmation",
+                //    "New Order has been created :" + orderHeaderDTO.Id);
                 if (result == null)
                 {
                     return BadRequest(new ErrorModelDTO()

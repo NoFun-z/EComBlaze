@@ -25,7 +25,7 @@ namespace EcomBlaze_API.Controllers
             try
             {
 
-                var domain = _configuration.GetValue<string>("Tangy_Client_URL");
+                var domain = _configuration.GetValue<string>("EcomBlaze_Client_URL");
 
                 var options = new SessionCreateOptions
                 {
