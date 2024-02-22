@@ -20,9 +20,9 @@
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.11" />
     <PackageReference Include="Radzen.Blazor" Version="4.19.1" />
-    <PackageReference Include="Syncfusion.Blazor.Grid" Version="23.1.43" />
-    <PackageReference Include="Syncfusion.Blazor.RichTextEditor" Version="23.1.43" />
-    <PackageReference Include="Syncfusion.Blazor.Themes" Version="23.1.43" />
+    <PackageReference Include="Syncfusion.Blazor.Grid" Version="24.2.7" />
+    <PackageReference Include="Syncfusion.Blazor.RichTextEditor" Version="24.2.7" />
+    <PackageReference Include="Syncfusion.Blazor.Themes" Version="24.2.7" />
   </ItemGroup>
 
   <ItemGroup>

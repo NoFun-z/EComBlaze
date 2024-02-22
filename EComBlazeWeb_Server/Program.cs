@@ -11,7 +11,7 @@ using Syncfusion.Blazor;
 using Microsoft.AspNetCore.Identity;
 
 //Register Syncfusion license
-Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MzEyMDkwMUAzMjM0MmUzMDJlMzBEM1hLeGE4eDBYNlFqbURROGI0dnU5cXhEcVRNMnJBUzlXaHJRRU5IOUJJPQ==");
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Ngo9BigBOggjHTQxAR8/V1NAaF1cXmhKYVF0WmFZfVpgdVRMYV5bQHFPIiBoS35RckVhW31ecHVUR2BaWEZ2");
 
 var builder = WebApplication.CreateBuilder(args);
 
